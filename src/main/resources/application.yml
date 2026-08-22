@@ -16,7 +16,7 @@ spring:
     activate:
       on-profile: local
   datasource:
-    url: jdbc:postgresql://localhost:5432/secureledger
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/secureledger}
     username: ${DB_USERNAME:secureledger}
     password: ${DB_PASSWORD:secureledger}
   jpa:
